@@ -54,8 +54,6 @@ class SettingsCommand extends Command {
   }
   async exec(message, args) {
  // code here & make sure to always return, so akairo knows it's done
-    await message.channel.send({embed: embed.error("This command is no longer available. Please see the bot's website for the reason.")});
-	  /*
     switch(args.option) {
      case 'announcechnl':
       if(args.value.length === 0) {
@@ -205,7 +203,7 @@ class SettingsCommand extends Command {
       break;
     };
     return;
-  } */
+  }
 } }
 
 module.exports = SettingsCommand;

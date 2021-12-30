@@ -43,8 +43,6 @@ class PardonCommand extends Command {
   }
   async exec(message, args) {
  // code here & make sure to always return, so akairo knows it's done
-    await message.channel.send({embed: embed.error("This command is no longer available. Please see the bot's website for the reason.")});
-	  /*
     let userWarns = await this.client.db.all(`SELECT * FROM warns WHERE guildid = ${message.guild.id} AND userid = "${args.member.user.id}" AND type = "Warn"`);
     if(userWarns.length === 0) return message.channel.send({embed: embed.error('That user doesn\'t have any warnings!')});
       let pardonEmbed = {
@@ -82,7 +80,6 @@ class PardonCommand extends Command {
     return message.channel.send({embed: embed.error('An unknown error occured when pardoning that user.')});
     }
   }
-  */
   }}
 
 module.exports = PardonCommand;

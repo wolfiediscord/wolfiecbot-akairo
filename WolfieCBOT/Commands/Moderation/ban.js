@@ -48,8 +48,7 @@ class BanCommand extends Command {
   }
   async exec(message, args) {
  // code here & make sure to always return, so akairo knows it's done
-    await message.channel.send({embed: embed.error("This command is no longer available. Please see the bot's website for the reason.")});
-   /* if(args.member.user === message.author) return message.channel.send({embed: embed.error('You cannot ban yourself!')});
+    if(args.member.user === message.author) return message.channel.send({embed: embed.error('You cannot ban yourself!')});
     if(!args.member.bannable) return message.channel.send({embed: embed.error('I cannot ban that user.')});
     await message.channel.send({embed: embed.warn(`Are you sure you want to ban ${args.member.user}?\nThis command will be cancelled in 10 seconds.`)})
     .then(async sentMsg => {
@@ -156,7 +155,7 @@ class BanCommand extends Command {
       return sentMsg.edit({embed: embed.error('You didn\'t react in time! Cancelled command.')})
     })
     })
-  } */
+  } 
 } }
 
 module.exports = BanCommand;

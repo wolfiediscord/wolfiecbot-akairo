@@ -43,8 +43,6 @@ class HackBanCommand extends Command {
   }
   async exec(message, args) {
  // code here & make sure to always return, so akairo knows it's done
-    await message.channel.send({embed: embed.error("This command is no longer available. Please see the bot's website for the reason.")});
-/*
     if(args.user === message.author.id) return message.channel.send({embed: embed.error('You cannot ban yourself!')});
     if(message.guild.members.cache.keyArray().includes(args.user)) return message.channel.send({embed: embed.error('That user is already in the server. Use `ban` to ban them.')});
     let banEmbed = {
@@ -80,7 +78,7 @@ class HackBanCommand extends Command {
     return message.channel.send({embed: embed.error('That is an invalid user, or another error occured.')})
     }
     return;
-  } */
+  } 
  } }
 
 module.exports = HackBanCommand;

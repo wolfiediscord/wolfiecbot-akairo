@@ -60,8 +60,6 @@ class TagCommand extends Command {
     );
     switch (option) {
       case "info":
-     await message.channel.send({embed: embed.error("This part of the command is no longer available. Please see the bot's website for the reason.")});
-		    /*
       if(!title || tagdbguildandtitle.length === 0) {
         let errmsg = embed.error('Not a valid tag.');
         return message.channel.send({embed: errmsg});
@@ -87,11 +85,8 @@ class TagCommand extends Command {
         color: `#${process.env.COLOR}`
       }
       message.channel.send({embed: embedd});
-      */
       break;
       case "delete":
-        await message.channel.send({embed: embed.error("This part of the command is no longer available. Please see the bot's website for the reason.")});
-		    /*
 	if (!title) {
           let errmsg = embed.error('Not a valid tag.')
           return message.channel.send({embed: errmsg});
@@ -121,11 +116,10 @@ class TagCommand extends Command {
           let errmsg = embed.error('You do not have permission to delete this tag.');
           message.channel.send({embed: errmsg})
           return;
-        } */
+        } 
         break;
       case "edit":
-        await message.channel.send({embed: embed.error("This part of the command is no longer available. Please see the bot's website for the reason.")});
-       /* if (!title) {
+        if (!title) {
           let errmsg = embed.error('Not a valid tag.');
           return message.channel.send({embed: errmsg});
         }
@@ -150,11 +144,8 @@ class TagCommand extends Command {
         );
         let successedit = embed.success(`Successfully edited the tag named "${title}"!`)
         message.channel.send({embed: successedit});
-	*/
         break;
       case "create":
-	await message.channel.send({embed: embed.error("This part of the command is no longer available. Please see the bot's website for the reason.")});
-        /*
 	if (tagdbguildandtitle.length > 0) {
           let errmsg = embed.error('Tag already exists.');
           message.channel.send({embed: errmsg})
@@ -190,7 +181,7 @@ class TagCommand extends Command {
           [message.guild.id, message.author.id, title, content]
         );
         let successcreate = embed.success(`Successfully created a tag named "${title}"!`);
-        message.channel.send({embed: successcreate}); */
+        message.channel.send({embed: successcreate}); 
         break;
       default:
         if (!option) {

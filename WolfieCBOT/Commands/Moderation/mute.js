@@ -48,8 +48,6 @@ class MuteCommand extends Command {
   }
   async exec(message, args) {
  // code here & make sure to always return, so akairo knows it's done
-	  await message.channel.send({embed: embed.error("This command is no longer available. Please see the bot's website for the reason.")});
-	  /*
     let mutedrole = await message.guild.roles.cache.get(await this.client.settings.get(message.guild.id, 'mutedrole'));
     if(!mutedrole) return message.channel.send({embed: embed.error('There isn\'t a muted role set! Set one using `settings`.')});
     if(args.member === message.member) return message.channel.send({embed: embed.error('You cannot mute yourself!')});
@@ -159,7 +157,7 @@ class MuteCommand extends Command {
     }).catch(err => sentMsg.edit({embed: embed.error('You didn\'t react in time! Cancelled command.')})); 
   });
     return;
-  } */
+  } 
   }}
 
 module.exports = MuteCommand;

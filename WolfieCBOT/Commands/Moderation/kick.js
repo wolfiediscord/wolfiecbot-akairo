@@ -58,8 +58,6 @@ class KickCommand extends Command {
   }
   async exec(message, args) {
     // code here & make sure to always return, so akairo knows it's done
-    await message.channel.send({embed: embed.error("This command is no longer available. Please see the bot's website for the reason.")});
-	  /*
     if (message.member === args.member)
       return message.channel.send({
         embed: embed.error("You cannot kick yourself!")
@@ -185,7 +183,7 @@ class KickCommand extends Command {
             })
           );
       });
-  } */
+  } 
   } }
 
 module.exports = KickCommand;

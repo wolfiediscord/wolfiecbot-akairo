@@ -40,8 +40,6 @@ class ModlogsCommand extends Command {
   }
   async exec(message, args) {
  // code here & make sure to always return, so akairo knows it's done
-  await message.channel.send({embed: embed.error("This command is no longer available. Please see the bot's website for the reason.")});
-	/*
   const member = args.member;
   if(args.clearall) {
     if(!message.member.hasPermission('MANAGE_GUILD')) return message.channel.send({embed: embedMaker.error('You do not have permission to clear modlogs. You must have `MANAGE_GUILD` in order to clear modlogs!')});
@@ -69,7 +67,7 @@ if (warns.length > 0) {
   embed.setDescription(`${member} has 0 moderator actions!`);
   return message.channel.send(embed);
 }
-  } */
+  } 
 } }
 
 module.exports = ModlogsCommand;
