@@ -1,3 +1,6 @@
+# Notice
+WolfieCBOT has reached EOS, or End of Support, status. This means that no additional security or feature updates will be provided. **Use at your own risk.**
+
 # WolfieCBOT
 WolfieCBOT V4.1 is the most advanced version of WolfieCBOT yet! With discord-akairo to help it out, it can do much more than before!
 
